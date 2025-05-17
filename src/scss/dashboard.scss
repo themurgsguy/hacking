@@ -1,0 +1,32 @@
+.dashboard {
+  padding-top: 80px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  padding: 12px;
+  aspect-ratio: 1 / 1;
+  font-size: 20px;
+  margin-right: 16px;
+  border-radius: 8px;
+  background: coral;
+}
+
+.welcome {
+  font-size: 24px;
+  /* margin-bottom: 2px; */
+}
+
+.date {
+  color: gray;
+}
+
+.button {
+  margin-left: auto;
+}
+
+
