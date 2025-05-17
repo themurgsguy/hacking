@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router';
 
 import Sidenav from './Sidenav';
 import Dashboard from './Dashboard';
+import AssetDetails from './AssetDetails';
 import Calendar from './Calendar';
 import Settings from './Settings';
 
@@ -13,8 +14,9 @@ function App() {
       <Sidenav />
       <Routes>
         <Route index element={<Dashboard />} />
-        <Route path="calendar" element={<Calendar />}/>
-        <Route path="settings" element={<Settings />}/>
+        <Route path="calendar" element={<Calendar />} />
+        <Route path="settings" element={<Settings />} />
+        <Route path="asset/:id" element={<AssetDetails />} />
       </Routes>
     </div>
   );

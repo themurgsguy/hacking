@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { useNavigate } from 'react-router';
 
 import { AssetGallary, AssetItem } from './AssetGallary';
 import Avatar from './Avatar';
@@ -21,18 +22,18 @@ const items = [
   }
 ];
 
-
 function Dashboard() {
-  const today = new Date();
   const dateOptions = {
     weekday: 'long',
     month: 'long',
     day: 'numeric',
   };
 
+  const today = new Date();
+  const navigate = useNavigate();
+
   const handleClick = (id) => {
-    // TODO: Redirect to details page
-    console.log(id);
+    navigate(`asset/${id}`);
   }
 
   return (
