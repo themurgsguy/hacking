@@ -1,14 +1,26 @@
 import classNames from 'classnames';
 
-function Avatar({ className, name }) {
-  const initials = name.match(/(\b\S)/g).slice(0, 2).join('');
+import { AssetGallary, AssetItem } from './AssetGallary';
+import Avatar from './Avatar';
 
-  return (
-    <div className={classNames('avatar', className)}>
-      {initials}
-    </div>
-  );
-};
+const items = [
+  {
+    id: '1',
+    name: 'My Refrigerator',
+    overdue: true,
+  },
+  {
+    id: '2',
+    name: 'My Washing Machine',
+    overdue: false,
+  },
+  {
+    id: '3',
+    name: 'My TV',
+    overdue: false,
+  }
+];
+
 
 function Dashboard() {
   const today = new Date();
@@ -17,6 +29,11 @@ function Dashboard() {
     month: 'long',
     day: 'numeric',
   };
+
+  const handleClick = (id) => {
+    // TODO: Redirect to details page
+    console.log(id);
+  }
 
   return (
     <div className="container dashboard">
@@ -32,6 +49,18 @@ function Dashboard() {
           <span className="material-symbols-rounded">add</span>
         </button>
       </header>
+
+      <h2 className="section-title">My Assets</h2> 
+      <AssetGallary>
+        {items.map(({ id, name, overdue }) => (
+          <AssetItem
+            key={id}
+            name={name}
+            overdue={overdue}
+            onClick={() => handleClick(id)}
+          />
+        ))}
+      </AssetGallary>
     </div>
   );
 }

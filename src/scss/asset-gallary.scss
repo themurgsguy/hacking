@@ -1,0 +1,37 @@
+.asset-gallary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 16px;
+}
+
+.asset-item {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 12px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 12px 12px 32px 0 rgba(#000, 0.12);
+
+  > .icon {
+    align-self: flex-start;
+    padding: 8px;
+    border-radius: 8px;
+    background: #F5F6FA;
+    color: #9D9EB1;
+  }
+
+  > .title {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  > .status {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 14px;
+    color: #9D9EB1;
+  }
+}

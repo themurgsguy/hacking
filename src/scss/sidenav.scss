@@ -1,0 +1,31 @@
+.sidenav {
+  width: 295px;
+  display: flex;
+  flex-direction: column;
+  padding: 52px 8px 80px;
+  background: white;
+  box-shadow: 4px 0 24px 0 rgba(#000, 0.1);
+
+  > .brand {
+    padding: 12px;
+    margin-bottom: 24px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  color: darkgray;
+
+  &.active {
+    color: inherit;
+  }
+
+  &:hover {
+    background: ghostwhite;
+  }
+}
+

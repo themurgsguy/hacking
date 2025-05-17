@@ -18,15 +18,15 @@ function Sidenav() {
     <nav className="sidenav">
       <Brand />
       <NavLink className={classes} to="/">
-        <span class="material-symbols-rounded">home</span>
+        <span className="material-symbols-rounded">home</span>
         Dashboard
       </NavLink>
       <NavLink className={classes} to="calendar">
-        <span class="material-symbols-rounded">calendar_today</span>
+        <span className="material-symbols-rounded">calendar_today</span>
         Calendar
       </NavLink>
       <NavLink className={classes} to="settings">
-        <span class="material-symbols-rounded">settings</span>
+        <span className="material-symbols-rounded">settings</span>
         Settings
       </NavLink>
     </nav>

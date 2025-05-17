@@ -27,4 +27,16 @@
   font-size: 16px;
   line-height: 1.5;
   height: 100vh;
+  background: #F5F6FA;
+}
+
+.container {  
+  /* display: flex; */
+  flex-grow: 1;
+  padding: 52px 40px;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 24px;
 }
