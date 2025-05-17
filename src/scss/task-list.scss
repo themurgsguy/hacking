@@ -1,0 +1,23 @@
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-item {
+  padding: 14px;
+  flex-grow: 1;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 12px 12px 32px 0 rgba(#000, 0.12);
+  cursor: pointer;
+  
+  > .title {
+    font-size: 18px;
+  }
+
+  > .time-stamp {
+    font-size: 14px;
+    color: #9D9EB1;
+  }
+}

@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import { useNavigate } from 'react-router';
 
 import { AssetGallary, AssetItem } from './AssetGallary';
+import TimeStamp from './TimeStamp';
 import Avatar from './Avatar';
 
 const items = [
@@ -42,9 +43,7 @@ function Dashboard() {
         <Avatar name="Conway Mustagagaza"/>
         <div>
           <h1 className="welcome">Welcome back, Conway</h1>
-          <h2 className="date">
-            {today.toLocaleDateString(undefined, dateOptions)}
-          </h2>
+          <TimeStamp className="date" dateString={today} />
         </div>
         <button className="button">
           <span className="material-symbols-rounded">add</span>
