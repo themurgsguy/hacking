@@ -40,7 +40,7 @@ function AssetDetails() {
             key={id}
             name={title}
             dueDate={dueDate}
-            onClick={handleClick}
+            onClick={() => handleClick(id)}
           />
         ))}
       </TaskList>

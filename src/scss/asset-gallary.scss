@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-gap: 16px;
+  max-width: 900px;
 }
 
 .asset-item {
